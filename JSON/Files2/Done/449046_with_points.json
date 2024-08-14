@@ -1,0 +1,83 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://www.gartentraum.de/magazin/moderne-gartengestaltung/",
+                "pos": "3"
+            }
+        },
+        {
+            "Affiliate Links": 2
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 1.0
+        },
+        {
+            "Durschnittliche Position": 0.0
+        },
+        {
+            "Score": 3.0
+        },
+        {
+            "textLength": 37559
+        },
+        {
+            "relScore": 0.7987433105247744
+        }
+    ],
+    [
+        {
+            "link": "https://www.amazon.de/s/ref=as_li_ss_tl?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias=stripbooks&field-keywords=gartengestaltung&sprefix=Gartengest%2Caps%2C161&crid=587V0Y7LX4BT&linkCode=sl2&tag=gartentraum01-21&linkId=22b2072ea701dcb25a19164d4aca88c9&language=de_DE",
+            "tag": "<a href=\"https://www.amazon.de/s/ref=as_li_ss_tl?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;url=search-alias=stripbooks&amp;field-keywords=gartengestaltung&amp;sprefix=Gartengest%2Caps%2C161&amp;crid=587V0Y7LX4BT&amp;linkCode=sl2&amp;tag=gartentraum01-21&amp;linkId=22b2072ea701dcb25a19164d4aca88c9&amp;language=de_DE\" rel=\"nofollow sponsored\" target=\"_blank\" title=\"B\u00fccher zur Gartengestaltung\"><img alt=\"Eine Grafik zu B\u00fccher zur Gartengestaltung\" src=\"https://www.gartentraum.de/magazin/wp-content/uploads/2018/08/Gartengestaltung-Buecher-350x350.jpg\" title=\"B\u00fccher zur Gartengestaltung\"/></a>",
+            "location": [
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 0,
+            "img_count": 1,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 2.0,
+            "loc_points": 0
+        },
+        {
+            "link": "https://www.amazon.de/s/ref=as_li_ss_tl?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias=stripbooks&field-keywords=gartengestaltung&sprefix=Gartengest%2Caps%2C161&crid=587V0Y7LX4BT&linkCode=sl2&tag=gartentraum01-21&linkId=22b2072ea701dcb25a19164d4aca88c9&language=de_DE",
+            "tag": "<a href=\"https://www.amazon.de/s/ref=as_li_ss_tl?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;url=search-alias=stripbooks&amp;field-keywords=gartengestaltung&amp;sprefix=Gartengest%2Caps%2C161&amp;crid=587V0Y7LX4BT&amp;linkCode=sl2&amp;tag=gartentraum01-21&amp;linkId=22b2072ea701dcb25a19164d4aca88c9&amp;language=de_DE\" rel=\"nofollow sponsored\" target=\"_blank\" title=\"B\u00fccher zur Gartengestaltung\">B\u00fccher zur Gartengestaltung</a>",
+            "location": [
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 0,
+            "img_count": 0,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 0.0,
+            "loc_points": 0
+        }
+    ]
+]

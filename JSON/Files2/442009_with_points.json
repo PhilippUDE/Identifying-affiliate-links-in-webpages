@@ -1,0 +1,122 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://www.filmen-lernen.com/die-10-besten-quentin-tarantino-filme/",
+                "pos": "6"
+            }
+        },
+        {
+            "Affiliate Links": 4
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 2.75
+        },
+        {
+            "Durschnittliche Position": 6.0
+        },
+        {
+            "Score": 18.75
+        },
+        {
+            "textLength": 15878
+        },
+        {
+            "relScore": 11.808792039299659
+        }
+    ],
+    [
+        {
+            "link": "https://www.amazon.de/dp/3866711514?tag=httpmeinde-21&linkCode=ogi&th=1&psc=1",
+            "tag": "<a class=\"aawp-product__image--link aawp-product__image\" href=\"https://www.amazon.de/dp/3866711514?tag=httpmeinde-21&amp;linkCode=ogi&amp;th=1&amp;psc=1\" rel=\"nofollow noopener sponsored\" target=\"_blank\" title=\"Emotionen im Film: Professionelle Techniken f\u00fcr Drehbuchautoren\"><img alt=\"Emotionen im Film: Professionelle Techniken f\u00fcr Drehbuchautoren\" class=\"aawp-product__image ezlazyloaded\" data-ezsrc=\"https://www.filmen-lernen.com/ezoimgfmt/m.media-amazon.com/images/I/41M1Q35FDxL._SL160_.jpg?ezimgfmt=rs:250x250/rscb1/ngcb1/notWebP\" ezimgfmt=\"rs rscb1 src ng ngcb1\" ezoid=\"0.5784541393419393\" src=\"https://www.filmen-lernen.com/ezoimgfmt/m.media-amazon.com/images/I/41M1Q35FDxL._SL160_.jpg?ezimgfmt=rs:250x250/rscb1/ngcb1/notWebP\"/><noscript><img alt=\"Emotionen im Film: Professionelle Techniken f\u00fcr Drehbuchautoren\" class=\"aawp-product__image\" src=\"https://m.media-amazon.com/images/I/41M1Q35FDxL._SL160_.jpg\"/></noscript></a>",
+            "location": [
+                "div",
+                "div",
+                "div",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 3,
+            "img_count": 2,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 5.5,
+            "loc_points": 6
+        },
+        {
+            "link": "https://www.amazon.de/dp/3866711514?tag=httpmeinde-21&linkCode=ogi&th=1&psc=1",
+            "tag": "<a class=\"aawp-product__title\" href=\"https://www.amazon.de/dp/3866711514?tag=httpmeinde-21&amp;linkCode=ogi&amp;th=1&amp;psc=1\" rel=\"nofollow noopener sponsored\" target=\"_blank\" title=\"Emotionen im Film: Professionelle Techniken f\u00fcr Drehbuchautoren\">Emotionen im Film: Professionelle Techniken f\u00fcr...</a>",
+            "location": [
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 0,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 0.5,
+            "loc_points": 6
+        },
+        {
+            "link": "https://www.amazon.de/gp/prime/?tag=httpmeinde-21",
+            "tag": "<a class=\"aawp-check-prime\" href=\"https://www.amazon.de/gp/prime/?tag=httpmeinde-21\" rel=\"nofollow noopener sponsored\" target=\"_blank\" title=\"Amazon Prime\"><img alt=\"Amazon Prime\" height=\"16\" src=\"https://www.filmen-lernen.com/wp-content/plugins/aawp/assets/img/icon-check-prime.svg\" width=\"55\"/><noscript><img alt=\"Amazon Prime\" height=\"16\" src=\"https://www.filmen-lernen.com/wp-content/plugins/aawp/assets/img/icon-check-prime.svg\" width=\"55\"/></noscript></a>",
+            "location": [
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 2,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 4.5,
+            "loc_points": 6
+        },
+        {
+            "link": "https://www.amazon.de/dp/3866711514?tag=httpmeinde-21&linkCode=ogi&th=1&psc=1",
+            "tag": "<a class=\"aawp-button aawp-button--buy aawp-button aawp-button--amazon aawp-button--icon aawp-button--icon-black\" href=\"https://www.amazon.de/dp/3866711514?tag=httpmeinde-21&amp;linkCode=ogi&amp;th=1&amp;psc=1\" rel=\"nofollow noopener sponsored\" target=\"_blank\" title=\"Preis auf Amazon pr\u00fcfen\">Preis auf Amazon pr\u00fcfen</a>",
+            "location": [
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 0,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 0.5,
+            "loc_points": 6
+        }
+    ]
+]

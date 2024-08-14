@@ -1,0 +1,72 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://www.smarticular.net/9-haarpflegetipps-hausmittel-und-selbstgemachte-pflegeprodukte/",
+                "pos": "1"
+            }
+        },
+        {
+            "Affiliate Links": 2
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 0.5
+        },
+        {
+            "Durschnittliche Position": 10.0
+        },
+        {
+            "Score": 22.5
+        },
+        {
+            "textLength": 20921
+        },
+        {
+            "relScore": 10.754744037091918
+        }
+    ],
+    [
+        {
+            "link": "https://www.amazon.de/dp/3946658008/?tag=sm097a-21",
+            "tag": "<a class=\"teaser-book__buy-link\" href=\"https://www.amazon.de/dp/3946658008/?tag=sm097a-21\" rel=\"nofollow noopener noreferrer\" target=\"_blank\" title=\"Amazon\">Amazon</a>",
+            "location": [
+                "p",
+                "div",
+                "div",
+                "div",
+                "article",
+                "main",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 0,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 0.5,
+            "loc_points": 10
+        },
+        {
+            "link": "https://www.amazon.de/dp/B09KNMNSQB/?tag=sm097a-21",
+            "tag": "<a class=\"teaser-book__buy-link\" href=\"https://www.amazon.de/dp/B09KNMNSQB/?tag=sm097a-21\" rel=\"nofollow noopener noreferrer\" target=\"_blank\" title=\"Kindle\">Kindle</a>",
+            "location": [
+                "p",
+                "div",
+                "div",
+                "div",
+                "article",
+                "main",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 0,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 0.5,
+            "loc_points": 10
+        }
+    ]
+]

@@ -1,0 +1,55 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://tipp-helden.de/diy-zauber-kreative-ideen-fuer-einzigartige-heimwerkerprojekte",
+                "pos": "2"
+            }
+        },
+        {
+            "Affiliate Links": 1
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 0.0
+        },
+        {
+            "Durschnittliche Position": 13.0
+        },
+        {
+            "Score": 27.0
+        },
+        {
+            "textLength": 7584
+        },
+        {
+            "relScore": 35.60126582278481
+        }
+    ],
+    [
+        {
+            "link": "https://www.amazon.de/gp/bestsellers/kitchen/?_encoding=UTF8&linkCode=ib1&tag=tipphelden-21&linkId=85a06dca06ee98675a7ba19f626dbc3f&ref_=ihub_curatedcontent_92255eb1-e891-416c-b9e0-2fb57a3e63ce",
+            "tag": "<a href=\"https://www.amazon.de/gp/bestsellers/kitchen/?_encoding=UTF8&amp;linkCode=ib1&amp;tag=tipphelden-21&amp;linkId=85a06dca06ee98675a7ba19f626dbc3f&amp;ref_=ihub_curatedcontent_92255eb1-e891-416c-b9e0-2fb57a3e63ce\" rel=\"noopener\" target=\"_blank\">Bestseller in K\u00fcche, Haushalt &amp; Wohnen</a>",
+            "location": [
+                "div",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "article",
+                "div",
+                "div",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 0,
+            "img_count": 0,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 0.0,
+            "loc_points": 13
+        }
+    ]
+]
