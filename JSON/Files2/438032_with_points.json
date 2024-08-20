@@ -1,0 +1,52 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://www.dentaly.org/de/zahnpflege/elektrische-zahnburste-test/kinder/",
+                "pos": "7"
+            }
+        },
+        {
+            "Affiliate Links": 1
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 4.5
+        },
+        {
+            "Durschnittliche Position": 6.0
+        },
+        {
+            "Score": 17.5
+        },
+        {
+            "textLength": 42742
+        },
+        {
+            "relScore": 4.094333442515559
+        }
+    ],
+    [
+        {
+            "link": "https://www.awin1.com/cread.php?awinmid=16798&awinaffid=849251&clickref=sidebar-banner&ued=https%3A%2F%2Fdrsmile.de%2F",
+            "tag": "<a href=\"https://www.awin1.com/cread.php?awinmid=16798&amp;awinaffid=849251&amp;clickref=sidebar-banner&amp;ued=https%3A%2F%2Fdrsmile.de%2F\" rel=\"sponsored noopener\" target=\"_blank\">\n<img alt=\"drsmile\" border=\"0\" class=\"entered litespeed-loaded\" data-lazyloaded=\"1\" data-ll-status=\"loaded\" data-src=\"https://www.dentaly.org/de/wp-content/uploads/sites/5/2023/11/drsmile-banner-300x250-1.png\" height=\"250\" src=\"https://www.dentaly.org/de/wp-content/uploads/sites/5/2023/11/drsmile-banner-300x250-1.png\" width=\"300\"/><noscript><img alt=\"drsmile\" border=\"0\" height=\"250\" src=\"https://www.dentaly.org/de/wp-content/uploads/sites/5/2023/11/drsmile-banner-300x250-1.png\" width=\"300\"/></noscript>\n</a>",
+            "location": [
+                "div",
+                "aside",
+                "div",
+                "div",
+                "div",
+                "div",
+                "noscript",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 2,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 4.5,
+            "loc_points": 6
+        }
+    ]
+]

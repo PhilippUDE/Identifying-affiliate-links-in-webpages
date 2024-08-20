@@ -1,0 +1,52 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://www.tueftler-und-heimwerker.de/",
+                "pos": "6"
+            }
+        },
+        {
+            "Affiliate Links": 1
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 2.0
+        },
+        {
+            "Durschnittliche Position": 6.0
+        },
+        {
+            "Score": 15.0
+        },
+        {
+            "textLength": 17405
+        },
+        {
+            "relScore": 8.618213157138753
+        }
+    ],
+    [
+        {
+            "link": "https://s.click.aliexpress.com/e/_DkaygzD",
+            "tag": "<a href=\"https://s.click.aliexpress.com/e/_DkaygzD\" rel=\"sponsored\" target=\"blank\">\n<img border=\"0\" decoding=\"async\" src=\"https://www.tueftler-und-heimwerker.de/wp-content/uploads/2021/07/Prismatische-Lifepo4-Zellen-300x300.jpg\" width='200px\"'/>\n</a>",
+            "location": [
+                "p",
+                "aside",
+                "div",
+                "div",
+                "div",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 0,
+            "img_count": 1,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 2.0,
+            "loc_points": 6
+        }
+    ]
+]

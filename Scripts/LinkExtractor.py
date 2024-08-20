@@ -1,6 +1,17 @@
 from bs4 import BeautifulSoup
+from functools import lru_cache
 import json
 
+import requests
+
+@lru_cache(maxsize=8589934592)
+def resolve_url(link):
+    try:
+        response = requests.head(link, allow_redirects=True)
+        return response.url
+    except requests.RequestException as e:
+        print(f"Fehler beim Auflösen des Links {link}: {e}")
+        return link
 
 def extract_affiliate_links(html_content):    
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -19,6 +30,11 @@ def extract_affiliate_links(html_content):
         if (is_affiliate_link(link) and check_rel(tag)):
             # Speichere den Link und den gesamten <a>-Tag als String
             affiliate_links_with_tags.append({'link': link, 'tag': str(tag), 'location': get_parent_tags(tag)})
+        else:
+            resolved_link = resolve_url(link)  # Link vor der Überprüfung auflöse
+            if (is_affiliate_link(resolved_link) and check_rel(tag)):
+                # Speichere den Link und den gesamten <a>-Tag als String
+                affiliate_links_with_tags.append({'link': resolved_link, 'tag': str(tag), 'location': get_parent_tags(tag)})
 
     # Gib die gefundenen Affiliate-Links zurück
     return affiliate_links_with_tags
@@ -66,6 +82,14 @@ keyword_sets = [
         ["https://", "pjtra", "t"],
         ["https://", "linksynergy", "t"],
         ["https://", "webgains","track","click"],    
+        ["https://", "billiger","de","mc="], 
+        ["https://", "td","oo34","net","aaid="],
+        ["https://", "ipn","idealo","ts"],
+        ["https://", "partner","cyberport","trck","eclick"],
+        ["https://", "pvn","mediamarkt","trck","eclick"],
+        ["https://", "notebooksbilliger","nbbct=",],
+        ["https://", "notebooksbilliger","nbbct%3D",],
+        ["https://", "pvn","saturn","trck","eclick"],
     ]
 def is_affiliate_link(link):
     
