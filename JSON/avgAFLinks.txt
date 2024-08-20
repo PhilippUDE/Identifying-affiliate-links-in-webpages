@@ -4,3 +4,4 @@ Durchschnittliche Hervorhebungsstärke: 2.28
 Durchschnittliche Position: 6.71
 Durchschnittlicher relScore: 19.16
 Position mit dem höchsten durchschnittlichen Score: 1 (Score: 93.92)
+Total entries: 1185

@@ -72,5 +72,6 @@ with open(txt_file_path, 'w', encoding='utf-8') as file:
     file.write(f"Durchschnittliche Position: {average_position:.2f}\n")
     file.write(f"Durchschnittlicher relScore: {average_relScore:.2f}\n")
     file.write(f"Position mit dem höchsten durchschnittlichen Score: {max_pos} (Score: {max_pos_score:.2f})\n")
+    file.write(f"Total entries: {total_entries}\n")
 
 print(f"Ergebnisse wurden erfolgreich in {txt_file_path} gespeichert.")
