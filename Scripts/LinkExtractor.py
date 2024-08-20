@@ -7,10 +7,10 @@ import requests
 @lru_cache(maxsize=8589934592)
 def resolve_url(link):
     try:
-        response = requests.head(link, allow_redirects=True)
+        response = requests.head(link, allow_redirects=True, timeout=1) #timeout verkürzen falls zu lange dauert
         return response.url
     except requests.RequestException as e:
-        print(f"Fehler beim Auflösen des Links {link}: {e}")
+        #print(f"Fehler beim Auflösen des Links {link}: {e}")
         return link
 
 def extract_affiliate_links(html_content):    
@@ -31,6 +31,7 @@ def extract_affiliate_links(html_content):
             # Speichere den Link und den gesamten <a>-Tag als String
             affiliate_links_with_tags.append({'link': link, 'tag': str(tag), 'location': get_parent_tags(tag)})
         else:
+            #print("resolving: "+ str(link))
             resolved_link = resolve_url(link)  # Link vor der Überprüfung auflöse
             if (is_affiliate_link(resolved_link) and check_rel(tag)):
                 # Speichere den Link und den gesamten <a>-Tag als String

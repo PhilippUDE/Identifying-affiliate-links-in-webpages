@@ -26,11 +26,9 @@ def get_url_and_position_for_id(csv_path, target_id):
     return None, None
 
 
-html_files = [file for file in os.listdir(directory_path) if file.endswith('.html')]#[:500]
+html_files = [file for file in os.listdir(directory_path) if file.endswith('.html')]
 num_html_files = len(html_files)
 x=0
-# Wähle 100 zufällige Dateien aus
-random_html_files = random.sample(html_files, 100)
 
 
 
@@ -48,12 +46,8 @@ for html_file in html_files:
 
     affiliate_links = extract_affiliate_links(html_content)
     print(f"Progress: {x}/{num_html_files} ({(x/num_html_files)*100:.2f}%)")
-    #print("Affiliate Links:" + str(len(affiliate_links)))
-    #if len(affiliate_links) > 0:
     results = calculate_points(affiliate_links, url, getTextLength(html_content), position)  
     daten.append(results[0])
-    if html_file in random_html_files:
-        save_results_to_json(results, f"JSON\\Files2\\{target_id}_with_points.json")
     x += 1
 
 
@@ -61,5 +55,5 @@ for html_file in html_files:
 # Sortieren der Liste nach Score-Wert
 sorted_data = sorted(daten, key=get_score, reverse=True)
 
-save_results_to_json(sorted_data, f"JSON/Result.json")
+save_results_to_json(sorted_data, f"JSON/Result2.json")
 
