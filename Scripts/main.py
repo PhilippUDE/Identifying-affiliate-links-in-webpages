@@ -22,7 +22,7 @@ def get_url_and_position_for_id(csv_path, target_id):
         reader = csv.DictReader(csvfile)
         for row in reader:
             if row['id'] == target_id:
-                return row['url'], row['position']
+                return row['url'], row['position'], row['name']
     return None, None
 
 
@@ -39,16 +39,17 @@ for html_file in html_files:
 
     # Extrahiere die ID aus dem Dateinamen
     target_id = os.path.splitext(html_file)[0]  # Annahme: ID ist der Dateiname ohne .html
-    url, position = get_url_and_position_for_id(csv_path, target_id)
+    url, position, searchengine = get_url_and_position_for_id(csv_path, target_id)
     if not url:
         print(f"Keine URL für ID {target_id} gefunden.")
         continue
 
     affiliate_links = extract_affiliate_links(html_content)
     print(f"Progress: {x}/{num_html_files} ({(x/num_html_files)*100:.2f}%)")
-    score = calculate_points(affiliate_links, url, getTextLength(html_content), position)  
+    score = calculate_points(affiliate_links, url, getTextLength(html_content), position, searchengine)  
     daten.append(score[0])
     x += 1
+    #save_results_to_json(score, f"JSON/{target_id}.json")
 
 
 
