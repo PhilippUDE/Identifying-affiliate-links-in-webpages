@@ -1,0 +1,103 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://www.campingliebe.de/anfaengerfreundlich-der-ultimative-guide-fuer-deine-erste-campingausruestung/",
+                "pos": "9"
+            }
+        },
+        {
+            "Affiliate Links": 3
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 2.6666666666666665
+        },
+        {
+            "Durschnittliche Position": 13.0
+        },
+        {
+            "Score": 31.666666666666664
+        },
+        {
+            "textLength": 5555
+        },
+        {
+            "relScore": 57.005700570057
+        }
+    ],
+    [
+        {
+            "link": "https://www.amazon.de/dp/B00M7KZGJG/?tag=www.campingliebe.de-21",
+            "tag": "<a data-amzn=\"B00M7KZGJG|Neues Lernen: Warum Faulheit\" href=\"https://www.amazon.de/dp/B00M7KZGJG/?tag=www.campingliebe.de-21\" rel=\"nofollow noopener\" target=\"_blank\">\n<div class=\"afxshop-image\">\n<img alt=\"Neues Lernen: Warum Faulheit und Ablenkung dabei helfen\" src=\"https://m.media-amazon.com/images/I/71idrONlOSL._SL500_.jpg\"/>\n</div>\n</a>",
+            "location": [
+                "div",
+                "li",
+                "ul",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "section",
+                "main",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 1,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 2.5,
+            "loc_points": 13
+        },
+        {
+            "link": "https://www.amazon.de/dp/B00M7KZGJG/?tag=www.campingliebe.de-21",
+            "tag": "<a data-amzn=\"B00M7KZGJG|Neues Lernen: Warum Faulheit\" href=\"https://www.amazon.de/dp/B00M7KZGJG/?tag=www.campingliebe.de-21\" rel=\"nofollow noopener\" target=\"_blank\">\n<div class=\"afxshop-title\">\n\t\t\t\t\tNeues Lernen: Warum Faulheit und Ablenkung dabei helfen\t\t\t\t\t</div>\n</a>",
+            "location": [
+                "div",
+                "li",
+                "ul",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "section",
+                "main",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 0,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 0.5,
+            "loc_points": 13
+        },
+        {
+            "link": "https://www.amazon.de/dp/B00M7KZGJG/?tag=www.campingliebe.de-21",
+            "tag": "<a data-amzn=\"B00M7KZGJG|Neues Lernen: Warum Faulheit\" href=\"https://www.amazon.de/dp/B00M7KZGJG/?tag=www.campingliebe.de-21\" rel=\"nofollow noopener\" target=\"_blank\">\n<div class=\"afxshop-wrap afx-gradient\">\n<div class=\"afxshop-merchant\">\n<span class=\"afxshop-logo\">\n<img alt=\"Amazon\" onerror=\"this.src='https://www.campingliebe.de/wp-content/plugins/affiai/img/logo/no-logo.png';\" src=\"https://www.campingliebe.de/wp-content/plugins/affiai/img/logo/amazon.png\"/>\n</span>\n<span class=\"afxshop-mname\">\n\t\t\t\t\t\t\t\t\t\tAmazon\t\t\t\t\t\t\t\t\t</span>\n</div>\n<div class=\"afxshop-btn\">\n<div class=\"afxshop-button\" data-cta=\"*Preis bei Amazon pr\u00fcfen!\">\n</div>\n</div>\n</div>\n</a>",
+            "location": [
+                "div",
+                "div",
+                "li",
+                "ul",
+                "div",
+                "aside",
+                "div",
+                "div",
+                "section",
+                "main",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 6,
+            "img_count": 1,
+            "style_count": 0,
+            "h_tag_count": 0,
+            "rep_points": 5.0,
+            "loc_points": 13
+        }
+    ]
+]

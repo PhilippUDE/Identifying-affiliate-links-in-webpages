@@ -1,0 +1,52 @@
+[
+    [
+        {
+            "Link": {
+                "url": "https://www.fitforfun.de/news/20-minuten-workout-fuer-anfaenger-von-pamela-reif-380113.html",
+                "pos": "20"
+            }
+        },
+        {
+            "Affiliate Links": 1
+        },
+        {
+            "Durschnittliche Hervorhebungsstaerke": 1.5
+        },
+        {
+            "Durschnittliche Position": 7.0
+        },
+        {
+            "Score": 16.5
+        },
+        {
+            "textLength": 11307
+        },
+        {
+            "relScore": 14.592730167153091
+        }
+    ],
+    [
+        {
+            "link": "https://www.amazon.de/You-Deserve-This-Lebensstil-Bowl-Kochbuch/dp/3960960743/ref=as_li_ss_tl?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1XBBIF98L5FZJ&keywords=you+deserve+this+pamela+reif&qid=1564578103&s=books&sprefix=you+deserve+,stripbooks,141&sr=1-1&linkCode=ll1&tag=fitforfunpap978-21&linkId=5b9d91c2cc7c54d40b0e913641834c12&language=de_DE",
+            "tag": "<a class=\"affiliate\" href=\"https://www.amazon.de/You-Deserve-This-Lebensstil-Bowl-Kochbuch/dp/3960960743/ref=as_li_ss_tl?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=1XBBIF98L5FZJ&amp;keywords=you+deserve+this+pamela+reif&amp;qid=1564578103&amp;s=books&amp;sprefix=you+deserve+,stripbooks,141&amp;sr=1-1&amp;linkCode=ll1&amp;tag=fitforfunpap978-21&amp;linkId=5b9d91c2cc7c54d40b0e913641834c12&amp;language=de_DE\" rel=\"nofollow noopener noreferrer\" style=\"color:rgb(0,159,227);\" target=\"_blank\">\u201eYou deserve this \u2013 Einfache &amp; nat\u00fcrliche Rezepte f\u00fcr einen gesunden Lebensstil\u201c</a>",
+            "location": [
+                "p",
+                "div",
+                "div",
+                "div",
+                "article",
+                "div",
+                "div",
+                "body",
+                "html",
+                "[document]"
+            ],
+            "class_count": 1,
+            "img_count": 0,
+            "style_count": 1,
+            "h_tag_count": 0,
+            "rep_points": 1.5,
+            "loc_points": 7
+        }
+    ]
+]

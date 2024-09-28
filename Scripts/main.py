@@ -46,8 +46,8 @@ for html_file in html_files:
 
     affiliate_links = extract_affiliate_links(html_content)
     print(f"Progress: {x}/{num_html_files} ({(x/num_html_files)*100:.2f}%)")
-    results = calculate_points(affiliate_links, url, getTextLength(html_content), position)  
-    daten.append(results[0])
+    score = calculate_points(affiliate_links, url, getTextLength(html_content), position)  
+    daten.append(score[0])
     x += 1
 
 

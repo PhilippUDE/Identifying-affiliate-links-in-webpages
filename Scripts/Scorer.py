@@ -6,7 +6,7 @@ def load_analyzed_data(json_file):
         data = json.load(file)
     return data
 
-container_tags = {'nav': 1,'footer': 2, 'main': 3, 'section': 4, 'header': 5, 'aside': 6,  'article': 7}
+container_tags = {'footer': 1,'main': 2, 'section': 3, 'nav': 4, 'aside': 5,  'article': 6, 'header':7}
 
 # Funktion zur Berechnung der Punkte basierend auf den Kriterien
 def calculate_points(affiliate_links, url, length, pos):

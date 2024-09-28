@@ -27,13 +27,15 @@ def extract_affiliate_links(html_content):
     for tag in a_tags:
         link = tag['href']
         # Check if the tag has a rel attribute with "sponsored", "nofollow" or "noopener"
-        if (is_affiliate_link(link) and check_rel(tag)):
+        isAfLink = is_affiliate_link(link)
+        hasRel = check_rel(tag)
+        if (isAfLink and hasRel):
             # Speichere den Link und den gesamten <a>-Tag als String
             affiliate_links_with_tags.append({'link': link, 'tag': str(tag), 'location': get_parent_tags(tag)})
-        else:
+        elif(hasRel):
             #print("resolving: "+ str(link))
             resolved_link = resolve_url(link)  # Link vor der Überprüfung auflöse
-            if (is_affiliate_link(resolved_link) and check_rel(tag)):
+            if (is_affiliate_link(resolved_link)):
                 # Speichere den Link und den gesamten <a>-Tag als String
                 affiliate_links_with_tags.append({'link': resolved_link, 'tag': str(tag), 'location': get_parent_tags(tag)})
 
@@ -63,6 +65,17 @@ def get_parent_tags(tag):
         parents.append(parent.name)
         parent = parent.find_parent()
     return parents
+
+
+
+
+
+'''
+    Title: ecir24-seo-spam-in-search-engines source code
+    Author: Janek Bevendorff, Webis
+    Date: 2021
+    Availability: https://github.com/webis-de/ecir24-seo-spam-in-search-engines/blob/main/warc_analysis/warc_analysis/process.py
+'''
 # Define the sets of keywords
 keyword_sets = [
         ["https://", "amazon", "tag=",],
@@ -83,8 +96,10 @@ keyword_sets = [
         ["https://", "pjtra", "t"],
         ["https://", "linksynergy", "t"],
         ["https://", "webgains","track","click"],    
-        ["https://", "billiger","de","mc="], 
+        ["https://", "billiger","de","mc="],
+        ["https://", "billiger","de","mc%3D"], 
         ["https://", "td","oo34","net","aaid="],
+        ["https://", "td","oo34","net","aaid%3D"],
         ["https://", "ipn","idealo","ts"],
         ["https://", "partner","cyberport","trck","eclick"],
         ["https://", "pvn","mediamarkt","trck","eclick"],
@@ -92,9 +107,8 @@ keyword_sets = [
         ["https://", "notebooksbilliger","nbbct%3D",],
         ["https://", "pvn","saturn","trck","eclick"],
     ]
-def is_affiliate_link(link):
-    
-    
+
+def is_affiliate_link(link): 
     # Check if the link matches any of the keyword sets
     for keyword_set in keyword_sets:
         if all(keyword in link for keyword in keyword_set):

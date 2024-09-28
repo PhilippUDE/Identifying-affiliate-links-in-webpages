@@ -16,6 +16,7 @@ total_position = 0
 total_relScore = 0
 total_entries = 0
 pos_scores = {}
+pos_affiliate_links = {}
 
 # Durchlaufe jeden Eintrag in den Daten
 for entry in data:
@@ -42,9 +43,12 @@ for entry in data:
             
             if pos not in pos_scores:
                 pos_scores[pos] = {'score_sum': 0, 'count': 0}
+                pos_affiliate_links[pos] = {'affiliate_links_sum': 0, 'count': 0}
             
             pos_scores[pos]['score_sum'] += score
             pos_scores[pos]['count'] += 1
+            pos_affiliate_links[pos]['affiliate_links_sum'] += affiliate_links
+            pos_affiliate_links[pos]['count'] += 1
 
 # Durchschnittswerte berechnen
 average_score = total_score / total_entries if total_entries > 0 else 0
@@ -53,12 +57,20 @@ average_highlight_strength = total_highlight_strength / total_entries if total_e
 average_position = total_position / total_entries if total_entries > 0 else 0
 average_relScore = total_relScore / total_entries if total_entries > 0 else 0
 
-# Durchschnittlichen Score pro Position berechnen
+# Durchschnittlichen Score und Affiliate Links pro Position berechnen
 avg_pos_scores = {pos: (data['score_sum'] / data['count']) for pos, data in pos_scores.items()}
+avg_pos_affiliate_links = {pos: (data['affiliate_links_sum'] / data['count']) for pos, data in pos_affiliate_links.items()}
 
-# Position mit dem höchsten durchschnittlichen Score finden
+# Position mit dem höchsten durchschnittlichen Score und Affiliate Links finden
 max_pos = max(avg_pos_scores, key=avg_pos_scores.get, default=None)
 max_pos_score = avg_pos_scores.get(max_pos, 0)
+
+max_pos_avg_affiliate_links = max(avg_pos_affiliate_links, key=avg_pos_affiliate_links.get, default=None)
+max_avg_affiliate_links = avg_pos_affiliate_links.get(max_pos_avg_affiliate_links, 0)
+
+# Position mit den absolut meisten Affiliate Links finden
+max_pos_total_affiliate_links = max(pos_affiliate_links, key=lambda pos: pos_affiliate_links[pos]['affiliate_links_sum'], default=None)
+max_total_affiliate_links = pos_affiliate_links.get(max_pos_total_affiliate_links, {}).get('affiliate_links_sum', 0)
 
 # Ausgabe der Ergebnisse
 print(f"Durchschnittlicher Score: {average_score:.2f}")
@@ -67,7 +79,10 @@ print(f"Durchschnittliche Hervorhebungsstärke: {average_highlight_strength:.2f}
 print(f"Durchschnittliche Position: {average_position:.2f}")
 print(f"Durchschnittlicher relScore: {average_relScore:.2f}")
 print(f"Position mit dem höchsten durchschnittlichen Score: {max_pos} (Score: {max_pos_score:.2f})")
+print(f"Position mit den durchschnittlich meisten Affiliate Links: {max_pos_avg_affiliate_links} (Avg Affiliate Links: {max_avg_affiliate_links:.2f})")
+print(f"Position mit den absolut meisten Affiliate Links: {max_pos_total_affiliate_links} (Total Affiliate Links: {max_total_affiliate_links})")
 
+# Ergebnisse in einer Textdatei speichern
 with open(txt_file_path, 'w', encoding='utf-8') as file:
     file.write(f"Durchschnittlicher Score: {average_score:.2f}\n")
     file.write(f"Durchschnittliche Affiliate Links: {average_affiliate_links:.2f}\n")
@@ -75,6 +90,11 @@ with open(txt_file_path, 'w', encoding='utf-8') as file:
     file.write(f"Durchschnittliche Position: {average_position:.2f}\n")
     file.write(f"Durchschnittlicher relScore: {average_relScore:.2f}\n")
     file.write(f"Position mit dem höchsten durchschnittlichen Score: {max_pos} (Score: {max_pos_score:.2f})\n")
+    file.write(f"Position mit den durchschnittlich meisten Affiliate Links: {max_pos_avg_affiliate_links} (Avg Affiliate Links: {max_avg_affiliate_links:.2f})\n")
+    file.write(f"Position mit den absolut meisten Affiliate Links: {max_pos_total_affiliate_links} (Total Affiliate Links: {max_total_affiliate_links})\n")
+    file.write(f"avg_pos_scores: {avg_pos_scores}\n")
+    file.write(f"avg_pos_affiliate_links: {avg_pos_affiliate_links}\n")
+    file.write(f"pos_affiliate_links: {pos_affiliate_links}\n")
     file.write(f"Total entries: {total_entries}\n")
 
 print(f"Ergebnisse wurden erfolgreich in {txt_file_path} gespeichert.")
