@@ -9,7 +9,7 @@ def load_analyzed_data(json_file):
 container_tags = {'footer': 1,'main': 2, 'section': 3, 'nav': 4, 'aside': 5,  'article': 6, 'header':7}
 
 # Funktion zur Berechnung der Punkte basierend auf den Kriterien
-def calculate_points(affiliate_links, url, length, pos):
+def calculate_points(affiliate_links, url, length, pos, searchengine):
     total_rep_points = 0  # Variable zum Speichern der Gesamtsumme der Punkte
     total_locations_points = 0
     for item in affiliate_links:
@@ -43,7 +43,7 @@ def calculate_points(affiliate_links, url, length, pos):
     score = len(affiliate_links) + average_rep_points + 2*average_locations_points
     relScore = (score / length) if length else 0
 
-    return [{'Link': {'url': url, 'pos': pos}},{'Affiliate Links': len(affiliate_links)}, {'Durschnittliche Hervorhebungsstaerke': average_rep_points}, {'Durschnittliche Position': average_locations_points}, {'Score': score},{'textLength': length}, {'relScore': relScore*10000}], affiliate_links 
+    return [{'Link': {'url': url, 'pos': pos, 'searchengine': searchengine}},{'Affiliate Links': len(affiliate_links)}, {'Durschnittliche Hervorhebungsstaerke': average_rep_points}, {'Durschnittliche Position': average_locations_points}, {'Score': score},{'textLength': length}, {'relScore': relScore*10000}], affiliate_links 
 
 # Funktion zum Speichern der Ergebnisse in einer neuen JSON-Datei
 def save_results_to_json(results, output_file):
