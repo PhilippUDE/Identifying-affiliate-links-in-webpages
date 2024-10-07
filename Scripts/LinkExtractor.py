@@ -1,32 +1,31 @@
 from bs4 import BeautifulSoup
 from functools import lru_cache
-import json
-#test
 import requests
 
+
+# Funktion um HEAD-Anfrage zu senden
 @lru_cache(maxsize=8589934592)
 def resolve_url(link):
     try:
-        response = requests.head(link, allow_redirects=True, timeout=1) #timeout verkürzen falls zu lange dauert
+        response = requests.head(link, allow_redirects=True, timeout=1) # Timeout verkürzen falls Anfrage zu lange dauert
         return response.url
     except:
         #print(f"Fehler beim Auflösen des Links {link}: {e}")
         return link
 
-def extract_affiliate_links(html_content):    
+# Funktion um Affiliate Links zu extrahieren
+def extract_affiliate_links(html_content):
+    # HTML Dokument parsen
     soup = BeautifulSoup(html_content, 'html.parser')
-
-    # Finde alle <a>-Tags
-    a_tags = soup.find_all('a', href=True)
-    #print("A_Tags:" + str(len(a_tags)))
-    
+    # Finde alle <a>-Tags mit href-Attribut
+    a_tags = soup.find_all('a', href=True)    
     # Liste für Affiliate-Links mit Tags
     affiliate_links_with_tags = []
-    
-    # Überprüfe jeden <a>-Tag
+    # Überprüfe jeden <a>-Tag (for Schleife)
     for tag in a_tags:
+        # URL aus href-Attribut extrahieren
         link = tag['href']
-        # Check if the tag has a rel attribute with "sponsored", "nofollow" or "noopener"
+        # Link auf Affiliate Link und rel Attribut untersuchen
         isAfLink = is_affiliate_link(link)
         hasRel = check_rel(tag)
         if(hasRel):
@@ -34,7 +33,6 @@ def extract_affiliate_links(html_content):
                 # Speichere den Link und den gesamten <a>-Tag als String
                 affiliate_links_with_tags.append({'link': link, 'tag': str(tag), 'location': get_parent_tags(tag)})
             else:
-                #print("resolving: "+ str(link))
                 resolved_link = resolve_url(link)  # Link vor der Überprüfung auflöse
                 if (is_affiliate_link(resolved_link)):
                     # Speichere den Link und den gesamten <a>-Tag als String
@@ -43,22 +41,23 @@ def extract_affiliate_links(html_content):
     # Gib die gefundenen Affiliate-Links zurück
     return affiliate_links_with_tags
 
+# Funktion um Länge des HTML-Dokumentes zu bestimmen
 def getTextLength(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
-    
     # Nur den Textinhalt extrahieren
     text_content = soup.get_text()
     # Länge des Textinhalts
     text_content_length = len(text_content)
-
     return text_content_length
 
+#Check if the tag has a rel attribute with "sponsored", "nofollow" or "noopener"
 def check_rel(tag):
     if ('rel' in tag.attrs and any(keyword in tag['rel'] for keyword in ["sponsored", "nofollow", "noopener"])):
         return True
     else:
         return False
 
+# Funktion um alle Parent Tags des Affiliate Links zu indetifizieren (Positionsbestimmung)
 def get_parent_tags(tag):
     parents = []
     parent = tag.find_parent()
@@ -77,7 +76,7 @@ def get_parent_tags(tag):
     Date: 2021
     Availability: https://github.com/webis-de/ecir24-seo-spam-in-search-engines/blob/main/warc_analysis/warc_analysis/process.py
 '''
-# Define the sets of keywords
+# Bekannte Affiliate-Link Sturukturen (zum Teil zitiert)
 keyword_sets = [
         ["https://", "amazon", "tag=",],
         ["https://", "amazon", "tag%3D",],
@@ -109,6 +108,7 @@ keyword_sets = [
         ["https://", "pvn","saturn","trck","eclick"],
     ]
 
+# Funktion um Affiliate-Link zu identifizieren
 def is_affiliate_link(link): 
     # Check if the link matches any of the keyword sets
     for keyword_set in keyword_sets:
