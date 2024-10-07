@@ -49,12 +49,12 @@ for html_file in html_files:
     score = calculate_points(affiliate_links, url, getTextLength(html_content), position, searchengine)  
     daten.append(score[0])
     x += 1
-    #save_results_to_json(score, f"JSON/{target_id}.json")
+    save_results_to_json(daten, f"JSON/Result5.json")
 
 
 
 # Sortieren der Liste nach Score-Wert
 sorted_data = sorted(daten, key=get_score, reverse=True)
 
-save_results_to_json(sorted_data, f"JSON/Result2.json")
+save_results_to_json(sorted_data, f"JSON/Result4.json")
 

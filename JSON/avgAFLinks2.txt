@@ -1,0 +1,12 @@
+Durchschnittlicher Score: 49.75
+Durchschnittliche Affiliate Links: 36.88
+Durchschnittliche Hervorhebungsstärke: 1.97
+Durchschnittliche Position: 5.45
+Durchschnittlicher relScore: 18.50
+Position mit dem höchsten durchschnittlichen Score: 1 (Score: 81.15)
+Position mit den durchschnittlich meisten Affiliate Links: 1 (Avg Affiliate Links: 69.26)
+Position mit den absolut meisten Affiliate Links: 1 (Total Affiliate Links: 5818)
+avg_pos_scores: {'1': 81.1487382076433, '2': 75.652679923756, '5': 57.669368145147544, '17': 47.38315731355134, '15': 44.042902735818835, '13': 47.878621977347805, '8': 51.44547186602263, '3': 51.75905632443957, '14': 44.041156714229984, '19': 45.14925972316884, '10': 46.88270527432251, '11': 47.15434198038889, '9': 38.68934882548792, '20': 43.03186434431951, '18': 45.40011738336414, '16': 46.603492151617274, '4': 47.649905735216, '6': 41.78606785838166, '12': 39.640100570174035, '7': 44.11816704060009}
+avg_pos_affiliate_links: {'1': 69.26190476190476, '2': 63.08536585365854, '5': 43.41860465116279, '17': 36.478873239436616, '15': 31.77922077922078, '13': 35.901234567901234, '8': 37.47560975609756, '3': 38.65060240963855, '14': 32.57142857142857, '19': 33.4125, '10': 33.734375, '11': 33.725, '9': 24.835616438356166, '20': 29.166666666666668, '18': 31.746987951807228, '16': 32.906666666666666, '4': 35.55714285714286, '6': 29.0875, '12': 27.0, '7': 30.391304347826086}
+pos_affiliate_links: {'1': {'affiliate_links_sum': 5818, 'count': 84}, '2': {'affiliate_links_sum': 5173, 'count': 82}, '5': {'affiliate_links_sum': 3734, 'count': 86}, '17': {'affiliate_links_sum': 2590, 'count': 71}, '15': {'affiliate_links_sum': 2447, 'count': 77}, '13': {'affiliate_links_sum': 2908, 'count': 81}, '8': {'affiliate_links_sum': 3073, 'count': 82}, '3': {'affiliate_links_sum': 3208, 'count': 83}, '14': {'affiliate_links_sum': 2280, 'count': 70}, '19': {'affiliate_links_sum': 2673, 'count': 80}, '10': {'affiliate_links_sum': 2159, 'count': 64}, '11': {'affiliate_links_sum': 2698, 'count': 80}, '9': {'affiliate_links_sum': 1813, 'count': 73}, '20': {'affiliate_links_sum': 2450, 'count': 84}, '18': {'affiliate_links_sum': 2635, 'count': 83}, '16': {'affiliate_links_sum': 2468, 'count': 75}, '4': {'affiliate_links_sum': 2489, 'count': 70}, '6': {'affiliate_links_sum': 2327, 'count': 80}, '12': {'affiliate_links_sum': 1836, 'count': 68}, '7': {'affiliate_links_sum': 2097, 'count': 69}}
+Total entries: 1542
