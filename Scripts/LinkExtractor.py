@@ -30,12 +30,12 @@ def extract_affiliate_links(html_content):
         hasRel = check_rel(tag)
         if(hasRel):
             if (isAfLink):
-                # Speichere den Link und den gesamten <a>-Tag als String
+                # Speichere den Link und den gesamten <a>-Tag als String in der Liste
                 affiliate_links_with_tags.append({'link': link, 'tag': str(tag), 'location': get_parent_tags(tag)})
             else:
-                resolved_link = resolve_url(link)  # Link vor der Überprüfung auflöse
+                resolved_link = resolve_url(link)  # Link vor der Überprüfung auflösen
                 if (is_affiliate_link(resolved_link)):
-                    # Speichere den Link und den gesamten <a>-Tag als String
+                    # Speichere den Link und den gesamten <a>-Tag als String in der Liste
                     affiliate_links_with_tags.append({'link': resolved_link, 'tag': str(tag), 'location': get_parent_tags(tag)})
 
     # Gib die gefundenen Affiliate-Links zurück
